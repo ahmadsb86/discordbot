@@ -199,7 +199,6 @@ bot.on('message', msg => {
 
 
 
-
 //hi there
 bot.on('message', (msg) =>{
          if(msg.content === "hi there"){
