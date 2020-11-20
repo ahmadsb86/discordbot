@@ -28,9 +28,9 @@ bot.on('message', msg => {
 
     switch (args[0]) {
 
-      case: 'imdumb':
-          msg.reply(d.getDay() + " , " + d.getHour());
-          break;
+        case 'imdumb':
+            msg.reply(d.getDay() + " , " + d.getHour());
+            break;
 
 
         case 'mute':
