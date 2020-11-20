@@ -28,6 +28,11 @@ bot.on('message', msg => {
 
     switch (args[0]) {
 
+      case: 'imdumb':
+          msg.reply(d.getDay() + " , " + d.getHour());
+          break;
+
+
         case 'mute':
             var person  = msg.guild.member(msg.mentions.users.first());
             if(!person) return  msg.reply("I CANT FIND THE USER " + person)
@@ -224,6 +229,7 @@ bot.on('message', msg => {
   if (msg.content === ('!link'))
   {
 
+
     d = new Date();
 
     //monday
@@ -372,6 +378,7 @@ catch(err){
 }
 
 bot.login(token)
+
 
 
 
