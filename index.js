@@ -30,7 +30,7 @@ bot.on('message', msg => {
 
         case 'imdumb':
             d = new Date();
-            msg.reply(d.getDay() + " , " + d.getHour());
+            msg.reply(d.getDay() + " , " + d.getHours());
             break;
 
 
