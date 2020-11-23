@@ -244,7 +244,7 @@ bot.on('message', msg => {
       if(h === 10){
         msg.channel.send('Math: https://meet.google.com/fig-duct-ank');
       }
-      if(h && m< 40){
+      if(h === 11 && m < 40){
         msg.channel.send('Break for 40 minutes :)');
       }
       if(h === 11 && m > 40 || h === 12 && m < 40){
