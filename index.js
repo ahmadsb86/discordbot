@@ -230,8 +230,6 @@ bot.on('message', msg => {
     const h = d.getHours() + 5;
     const m = d.getMinutes();
 
-    msg.reply("DEBUG: " + d.getHours + " , " + d.getMinutes);
-
     //monday
 
     if(d.getDay() === 1){
