@@ -28,10 +28,6 @@ bot.on('message', msg => {
 
     switch (args[0]) {
 
-        case 'imdumb':
-            d = new Date();
-            msg.reply(d.getDay() + " , " + d.getHours());
-            break;
 
 
         case 'mute':
@@ -229,59 +225,62 @@ bot.on('message', msg => {
   if (msg.content === ('!link'))
   {
 
-
     d = new Date();
+
+    const h = d.getHours() + 5;
+    const m = d.getMinutes();
 
     msg.reply("DEBUG: " + d.getHours + " , " + d.getMinutes);
 
     //monday
 
     if(d.getDay() === 1){
-      if(d.getHours() === 8){
+      if(h === 8){
         msg.channel.send('Pak Studies: https://meet.google.com/srg-vvyx-bra');
       }
-      if(d.getHours() === 9){
+      if(h === 9){
         msg.channel.send('Sciences: https://meet.google.com/xmf-hdts-xuf');
       }
-      if(d.getHours() === 10){
+      if(h === 10){
         msg.channel.send('Math: https://meet.google.com/fig-duct-ank');
       }
-      if(d.getHours() === 11 && d.getMinutes() < 40){
+      if(h && m< 40){
         msg.channel.send('Break for 40 minutes :)');
       }
-      if(d.getHours() === 11 && d.getMinutes() > 40 || d.getHours() === 12 && d.getMinutes() < 40){
+      if(h === 11 && m > 40 || h === 12 && m < 40){
         msg.channel.send('English: https://zoom.us/j/95162734853?pwd=MS9HVzQ3UkxUeVRZL0ZKMkY3VHE4Zz09');
       }
-      if(d.getHours() === 12 && d.getMinutes() > 40  || d.getHours() === 13 && d.getMinutes() < 40){
+      if(h === 12 && m > 40  || h === 13 && m < 40){
         msg.channel.send('Islmaiat: https://meet.google.com/faq-oxmg-pqg');
       }
-      if(d.getHours() === 13 && d.getMinutes() > 40  || d.getHours() === 14 && d.getMinutes() < 40){
+      if(h === 13 && m > 40  || h === 14 && m < 40){
         msg.channel.send('French: Check on managebac for link.');
       }
     }
 
+
       //tuesday
 
     else if(d.getDay() === 2){
-      if(d.getHours() === 8){
+      if(h === 8){
         msg.channel.send('Urdu: https://meet.google.com/yrp-jyfk-iwh');
       }
-      if(d.getHours() === 9){
+      if(h === 9){
         msg.channel.send('Sciences: https://meet.google.com/xmf-hdts-xuf');
       }
-      if(d.getHours() === 10){
+      if(d. === 10){
         msg.channel.send('IDU: https://meet.google.com/uek-joba-pnb');
       }
-      if(d.getHours() === 11 && d.getMinutes() < 40){
+      if(h === 11 && m < 40){
         msg.channel.send('Break for 40 minutes :)');
       }
-      if(d.getHours() === 11 && d.getMinutes() > 40 || d.getHours() === 12 && d.getMinutes() < 40){
+      if(h === 11 && m > 40 || h === 12 && m < 40){
         msg.channel.send('PE: https://meet.google.com/hrh-gaqa-fei');
       }
-      if(d.getHours() === 12 && d.getMinutes() > 40  || d.getHours() === 13 && d.getMinutes() < 40){
+      if(h === 12 && m > 40  || h === 13 && m < 40){
         msg.channel.send('Pak Studies: https://meet.google.com/srg-vvyx-bra');
       }
-      if(d.getHours() === 13 && d.getMinutes() > 40  || d.getHours() === 14 && d.getMinutes() < 40){
+      if(h === 13 && m > 40  || h === 14 && m < 40){
         msg.channel.send('English: https://zoom.us/j/95162734853?pwd=MS9HVzQ3UkxUeVRZL0ZKMkY3VHE4Zz09');
       }
     }
@@ -289,25 +288,25 @@ bot.on('message', msg => {
       //wednesday
 
     else if(d.getDay() === 3){
-      if(d.getHours() === 8){
+      if(h === 8){
         msg.channel.send('Urdu: https://meet.google.com/yrp-jyfk-iwh');
       }
-      if(d.getHours() === 9){
+      if(h === 9){
         msg.channel.send('Math: https://meet.google.com/fig-duct-ank');
       }
-      if(d.getHours() === 10){
+      if(h === 10){
         msg.channel.send('Art: https://meet.google.com/ron-kfnk-cux');
       }
-      if(d.getHours() === 11 && d.getMinutes() < 40){
+      if(h === 11 && m < 40){
         msg.channel.send('Break for 40 minutes :)');
       }
-      if(d.getHours() === 11 && d.getMinutes() > 40 || d.getHours() === 12 && d.getMinutes() < 40){
+      if(h === 11 && m > 40 || h === 12 && m < 40){
         msg.channel.send('Art: https://meet.google.com/ron-kfnk-cux');
       }
-      if(d.getHours() === 12 && d.getMinutes() > 40  || d.getHours() === 13 && d.getMinutes() < 40){
+      if(h === 12 && m > 40  || h === 13 && m < 40){
         msg.channel.send('French: Check managebac for link');
       }
-      if(d.getHours() === 13 && d.getMinutes() > 40  || d.getHours() === 14 && d.getMinutes() < 40){
+      if(h === 13 && m > 40  || h === 14 && m < 40){
         msg.channel.send('Pak Studies: https://meet.google.com/srg-vvyx-bra');
       }
 
@@ -316,25 +315,25 @@ bot.on('message', msg => {
     //thrusday
 
   else if(d.getDay() === 4){
-    if(d.getHours() === 8){
+    if(h === 8){
       msg.channel.send('Design: https://meet.google.com/bmz-fhmg-wpy');
     }
-    if(d.getHours() === 9){
+    if(h === 9){
       msg.channel.send('Design: https://meet.google.com/bmz-fhmg-wpy');
     }
-    if(d.getHours() === 10){
+    if(h === 10){
       msg.channel.send('English: https://zoom.us/j/95162734853?pwd=MS9HVzQ3UkxUeVRZL0ZKMkY3VHE4Zz09');
     }
-    if(d.getHours() === 11 && d.getMinutes() < 40){
+    if(h === 11 && m < 40){
       msg.channel.send('Break for 40 minutes :)');
     }
-    if(d.getHours() === 11 && d.getMinutes() > 40 || d.getHours() === 12 && d.getMinutes() < 40){
+    if(h === 11 && m > 40 || h === 12 && m < 40){
       msg.channel.send('Science: https://meet.google.com/xmf-hdts-xuf');
     }
-    if(d.getHours() === 12 && d.getMinutes() > 40  || d.getHours() === 13 && d.getMinutes() < 40){
+    if(h === 12 && m > 40  || h === 13 && m < 40){
       msg.channel.send('French: Check managebac for link');
     }
-    if(d.getHours() === 13 && d.getMinutes() > 40  || d.getHours() === 14 && d.getMinutes() < 40){
+    if(h === 13 && m > 40  || h === 14 && m < 40){
       msg.channel.send('PSHE: https://meet.google.com/jmu-hqdb-bto?pli=1&authuser=1');
     }
 
@@ -343,19 +342,19 @@ bot.on('message', msg => {
   //friday
 
   else if(d.getDay() === 5){
-    if(d.getHours() === 8){
+    if(h === 8){
       msg.channel.send('Math: https://meet.google.com/fig-duct-ank');
     }
-    if(d.getHours() === 9){
+    if(h === 9){
       msg.channel.send('Personal Project: https://us04web.zoom.us/j/7998241635?pwd=RnZTWFNxeDNPanBkaUp3ME41SW1uZz09');
     }
-    if(d.getHours() === 10){
+    if(h === 10){
       msg.channel.send('break for 1 hour');
     }
-    if(d.getHours() === 11){
+    if(h === 11){
       msg.channel.send('Islmaiat: https://meet.google.com/faq-oxmg-pqg');
     }
-    if(d.getHours() === 12){
+    if(h === 12){
       msg.channel.send('Urdu: https://meet.google.com/yrp-jyfk-iwh');
     }
 
@@ -365,7 +364,7 @@ bot.on('message', msg => {
     msg.reply('no class rn :)');
   }
 
-  console.log(d.getDay(), d.getHours())
+  console.log(d.getDay(), h)
 
 
 
