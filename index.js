@@ -268,7 +268,7 @@ bot.on('message', msg => {
       if(h === 9){
         msg.channel.send('Sciences: https://meet.google.com/xmf-hdts-xuf');
       }
-      if(d. === 10){
+      if(h === 10){
         msg.channel.send('IDU: https://meet.google.com/uek-joba-pnb');
       }
       if(h === 11 && m < 40){
