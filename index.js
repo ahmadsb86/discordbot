@@ -231,9 +231,11 @@ bot.on('message', msg => {
 
 
     d = new Date();
+    
+    try{
 
     //monday
-
+   
     if(d.getDay() === 1){
       if(d.getHours() === 8){
         msg.channel.send('Pak Studies: https://meet.google.com/srg-vvyx-bra');
@@ -356,6 +358,10 @@ bot.on('message', msg => {
     if(d.getHours() === 12){
       msg.channel.send('Urdu: https://meet.google.com/yrp-jyfk-iwh');
     }
+  }
+  catch(e){
+    msg.reply(e);
+  }
 
   }
 
