@@ -232,6 +232,8 @@ bot.on('message', msg => {
 
     d = new Date();
     
+    msg.reply("DEBUG: " + d.getHours + " , " + d.getMinutes);
+    
     try{
 
     //monday
