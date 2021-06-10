@@ -244,6 +244,7 @@ bot.on('ready',()=>{console.log("Online")});
 var prefix = '!';
 
 bot.on('message', msg =>{
+  msg.channel.send("hi");
   if(msg.content.substring(0,1) == prefix){
     var arr = msg.content.substrin(1).split(" ");
     var cmd = arr[0];
